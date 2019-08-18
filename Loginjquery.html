@@ -1,0 +1,50 @@
+<!doctypehtml>
+<html>
+<head><title></title>
+
+    <link rel="stylesheet" href="bootstrap-4.3.1-dist/css/bootstrap.min.css">
+</head>
+<body>
+	<script type="text/javascript"></script>
+	<script src="app/assets/js/jquery-3.4.1.min.js"></script>
+<div>
+<div>
+<form name="my_form" action="" method="post" onsubmit="return validate()">
+	<img src="Unical%20CSC%20year2.jpg">
+	<div>
+<label>Username:</label>
+<input type="text" name="uname" placeholder="enter your name">
+</div>
+<div>
+<label>Password:</label>
+<input type="password" name="pwd" placeholder="enter password">
+</div>
+<button class="btn btn-primary" type="submit">Submit</button>
+</form>
+</div>
+</div>
+
+<script>
+$(document).ready(function()
+{
+	
+	$("button").on('submit',function(){
+
+
+	function validate(){
+	var un =$('uname').val();
+	var pwd =$('pwd').val();
+
+	if(uname==''){
+	alert("enter username");
+	return false;
+	}else{
+	alert("it is successful");
+	return true;
+	}
+	}
+	})
+})
+</script>
+</body>
+</html>
